@@ -24,10 +24,10 @@ function UserComponent() {
   };
   return (
     <React.Fragment>
-      <div className="container my-12 mx-auto px-4 md:px-12">
-        <div className="flex flex-wrap -mx-1 lg:-mx-4">
-          {users &&
-            users.map((info, index) => (
+      {users && (
+        <div className="container my-12 mx-auto px-4 md:px-12">
+          <div className="flex flex-wrap -mx-1 lg:-mx-4">
+            {users.map((info, index) => (
               <UserCardComponent
                 key={index}
                 userInfo={info}
@@ -36,8 +36,9 @@ function UserComponent() {
                 handleDelete={handleDelete}
               />
             ))}
+          </div>
         </div>
-      </div>
+      )}
     </React.Fragment>
   );
 }
