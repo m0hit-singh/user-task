@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./user.css";
 import UserCardComponent from "./user-card.component";
 import axios from "axios";
 

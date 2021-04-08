@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./user.css";
 import EditUserModal from "./edit-user.component";
 
 function UserCardComponent({ userInfo, allUsers, handleDelete, setUsers }) {
