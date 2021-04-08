@@ -10,7 +10,7 @@ function UserComponent() {
     axios
       .get("https://jsonplaceholder.typicode.com/users")
       .then((result) => {
-        console.log(result.data);
+        // console.log(result.data);
         setUsers(result.data);
       })
       .catch((error) => console.log(error));
